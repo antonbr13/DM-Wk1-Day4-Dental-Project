@@ -1,0 +1,65 @@
+/*box-sizing: border-box = border, padding, content included in height and width values*/
+* {
+	box-sizing: border-box; 
+}
+
+body {
+	background: grey;
+}
+
+header {
+	background: black;
+	height: 60px;
+
+}
+
+header a {
+	color: aqua;
+	line-height: 60px;
+	padding: 0 150px;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.container {
+	background-color: white;
+	margin: 10px auto;
+	width: 80%;
+	height: 700px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+	.container img {
+		max-width: 100%;
+		
+	}
+	
+.sticky-right {
+	float: right;
+}
+
+@media (max-width: 600px) {
+	header .sticky-right {
+		display: none;
+	}
+	header {
+		text-align: center;
+	}
+}
+
+@media all and (min-width: 600px) and (max-width: 670px) {
+	header .sticky-right{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: px;
+	}
+}
